@@ -1,0 +1,6 @@
+{
+  "name": "RuralReadiness",
+  "description": "Data-driven rural development intelligence platform for infrastructure, talent, connectivity, community reporting, and development simulation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,230 @@
+import { LanguageCode } from '../types';
+
+export const TRANSLATIONS: Record<LanguageCode, Record<string, string>> = {
+  en: {
+    appName: 'RuralReadiness',
+    tagline: 'Every Complaint. Better Decisions. Stronger Communities.',
+    heroSubtitle: 'AI-Powered Smart Citizen Grievance & Rural Development Intelligence Platform',
+    reportAProblem: 'Report a Problem',
+    trackGrievance: 'Track Grievance',
+    myGrievances: 'My Grievances',
+    officerDashboard: 'Officer Dashboard',
+    intelligenceDashboard: 'Development Intelligence',
+    hotspots: 'Problem Hotspots',
+    recurringIssues: 'Recurring Issues',
+    priorityEngine: 'Priority Engine',
+    simulator: 'Development Simulator',
+    deptPerformance: 'Dept Performance',
+    guidedDemo: 'Judge / Hackathon Demo Tour',
+    
+    // Grievance Form
+    submitTitle: 'Submit Citizen Grievance',
+    submitSubtitle: 'Report local infrastructure, water, electricity or public issues for AI analysis and fast department action.',
+    formGrievanceTitle: 'Grievance Title',
+    formGrievanceTitlePlaceholder: 'e.g., Dangerous potholes near village primary school',
+    formDescription: 'Detailed Description',
+    formDescriptionPlaceholder: 'Describe the problem, when it started, how many families are affected...',
+    formCategory: 'Grievance Category',
+    formCategoryAutoAI: '✨ Let AI Auto-Classify Category & Priority',
+    formVillage: 'Village / Town',
+    formDistrict: 'District',
+    formLocationDetails: 'Specific Landmark / Street',
+    formLocationDetailsPlaceholder: 'e.g., Main Chowk, near Government Primary School',
+    formUploadPhoto: 'Upload Evidence Photo / Camera',
+    formReporterName: 'Your Full Name',
+    formContactPhone: 'Contact Mobile Number',
+    formPrefLanguage: 'Preferred Communication Language',
+    formSubmitButton: 'Submit Grievance to AI Engine',
+    formAnalyzing: 'AI Analyzing Grievance & Routing...',
+    
+    // Statuses
+    statusSubmitted: 'Submitted',
+    statusAIAnalyzed: 'AI Analyzed',
+    statusAssigned: 'Assigned',
+    statusAccepted: 'Accepted',
+    statusInProgress: 'In Progress',
+    statusResolved: 'Resolved',
+    statusClosed: 'Closed',
+    statusReopened: 'Reopened',
+
+    // Priorities
+    priorityCritical: 'Critical',
+    priorityHigh: 'High',
+    priorityMedium: 'Medium',
+    priorityLow: 'Low',
+
+    // Track
+    enterGrievanceId: 'Enter Grievance ID (e.g., RR-2026-000124)',
+    trackNow: 'Track Status',
+    expectedResolution: 'Expected Resolution By',
+    slaDeadline: 'SLA Target Deadline',
+    assignedDept: 'Responsible Department',
+    timeline: 'Resolution Activity Timeline',
+    officerRemarks: 'Officer Field Remarks',
+    resolutionEvidence: 'Resolution Evidence Photo',
+    citizenFeedbackTitle: 'Citizen Resolution Verification',
+    feedbackPrompt: 'Was your problem actually resolved satisfactorily on the ground?',
+    yesResolved: '👍 Yes, Issue Resolved',
+    noNotResolved: '👎 No, Problem Still Exists',
+    ratingPrompt: 'Rate the department response speed and quality:',
+    reopenButton: 'Reopen Grievance for Officer Review',
+    submitFeedback: 'Submit Verification Feedback',
+
+    // Roles
+    roleCitizen: 'Citizen Portal',
+    roleOfficer: 'Department Officer',
+    roleAdmin: 'State Administrator'
+  },
+  hi: {
+    appName: 'रूरल रेडीनेस',
+    tagline: 'हर शिकायत। बेहतर फैसले। सशक्त गांव।',
+    heroSubtitle: 'एआई-संचालित स्मार्ट नागरिक शिकायत निवारण एवं ग्रामीण विकास खुफिया मंच',
+    reportAProblem: 'समस्या दर्ज करें',
+    trackGrievance: 'शिकायत ट्रैक करें',
+    myGrievances: 'मेरी शिकायतें',
+    officerDashboard: 'अधिकारी डैशबोर्ड',
+    intelligenceDashboard: 'विकास डैशबोर्ड',
+    hotspots: 'समस्या हॉटस्पॉट',
+    recurringIssues: 'बार-बार होने वाली समस्याएं',
+    priorityEngine: 'प्राथमिकता इंजन',
+    simulator: 'विकास सिम्युलेटर',
+    deptPerformance: 'विभाग प्रदर्शन',
+    guidedDemo: 'डेमो टूर (3 मिनट)',
+
+    // Grievance Form
+    submitTitle: 'नागरिक शिकायत दर्ज करें',
+    submitSubtitle: 'सड़क, पानी, बिजली या सार्वजनिक समस्याओं की रिपोर्ट करें ताकि एआई त्वरित विभाग कार्रवाई सुनिश्चित कर सके।',
+    formGrievanceTitle: 'शिकायत का शीर्षक',
+    formGrievanceTitlePlaceholder: 'उदा. गांव के स्कूल के पास खतरनाक गड्ढे',
+    formDescription: 'विस्तृत विवरण',
+    formDescriptionPlaceholder: 'समस्या कब शुरू हुई, कितने परिवार प्रभावित हैं, विस्तार से लिखें...',
+    formCategory: 'शिकायत श्रेणी',
+    formCategoryAutoAI: '✨ एआई को श्रेणी व प्राथमिकता स्वतः पहचानने दें',
+    formVillage: 'गांव / कस्बा',
+    formDistrict: 'जिला',
+    formLocationDetails: 'स्थान / निकटतम पहचान चिह्न',
+    formLocationDetailsPlaceholder: 'उदा. सरकारी स्कूल के सामने, मुख्य मार्ग',
+    formUploadPhoto: 'तस्वीर / कैमरा अपलोड करें',
+    formReporterName: 'आपका पूरा नाम',
+    formContactPhone: 'मोबाइल नंबर',
+    formPrefLanguage: 'पसंदीदा भाषा',
+    formSubmitButton: 'एआई प्रणाली को शिकायत भेजें',
+    formAnalyzing: 'एआई विश्लेषण व विभाग आवंटन जारी...',
+
+    // Statuses
+    statusSubmitted: 'दर्ज किया गया',
+    statusAIAnalyzed: 'एआई विश्लेषित',
+    statusAssigned: 'विभाग को आवंटित',
+    statusAccepted: 'स्वीकृत',
+    statusInProgress: 'कार्य प्रगति पर',
+    statusResolved: 'समाधान हो गया',
+    statusClosed: 'बंद',
+    statusReopened: 'पुनः खोला गया',
+
+    // Priorities
+    priorityCritical: 'अति गंभीर (Critical)',
+    priorityHigh: 'उच्च (High)',
+    priorityMedium: 'मध्यम (Medium)',
+    priorityLow: 'सामान्य (Low)',
+
+    // Track
+    enterGrievanceId: 'शिकायत संख्या दर्ज करें (उदा. RR-2026-000124)',
+    trackNow: 'स्थिति देखें',
+    expectedResolution: 'अपेक्षित समाधान तिथि',
+    slaDeadline: 'एस एल ए समय सीमा',
+    assignedDept: 'जिम्मेदार विभाग',
+    timeline: 'गतिविधि समय-सीमा',
+    officerRemarks: 'अधिकारी की टिप्पणी',
+    resolutionEvidence: 'समाधान प्रमाण तस्वीर',
+    citizenFeedbackTitle: 'नागरिक सत्यापन एवं फीडबैक',
+    feedbackPrompt: 'क्या आपकी समस्या का वास्तविक समाधान हो गया है?',
+    yesResolved: '👍 हां, समस्या हल हो गई',
+    noNotResolved: '👎 नहीं, समस्या अभी भी बनी हुई है',
+    ratingPrompt: 'विभाग के कार्य व गति को रेटिंग दें:',
+    reopenButton: 'शिकायत पुनः खोलें',
+    submitFeedback: 'फीडबैक सबमिट करें',
+
+    // Roles
+    roleCitizen: 'नागरिक पोर्टल',
+    roleOfficer: 'विभाग अधिकारी',
+    roleAdmin: 'राज्य प्रशासन'
+  },
+  te: {
+    appName: 'రూరల్ రెడీనెస్',
+    tagline: 'ప్రతి ఫిర్యాదు. మెరుగైన నిర్ణయాలు. బలమైన గ్రామాలు.',
+    heroSubtitle: 'ఏఐ ఆధారిత పౌర సమస్యల పరిష్కారం & గ్రామీణాభివృద్ధి ఇంటెలిజెన్స్ ప్లాట్‌ఫారమ్',
+    reportAProblem: 'సమస్యను నివేదించండి',
+    trackGrievance: 'ఫిర్యాదు ట్రాక్ చేయండి',
+    myGrievances: 'నా ఫిర్యాదులు',
+    officerDashboard: 'అధికారి డ్యాష్‌బోర్డ్',
+    intelligenceDashboard: 'అభివృద్ధి ఇంటెలిజెన్స్',
+    hotspots: 'హాట్‌స్పాట్‌ల మ్యాప్',
+    recurringIssues: 'పునరావృత సమస్యలు',
+    priorityEngine: 'ప్రాధాన్యతా ఇంజిన్',
+    simulator: 'అభివృద్ధి సిమ్యులేటర్',
+    deptPerformance: 'విభాగాల పనితీరు',
+    guidedDemo: 'డెమో టూర్ (3 నిమిషాలు)',
+
+    // Grievance Form
+    submitTitle: 'పౌర సమస్యను నమోదు చేయండి',
+    submitSubtitle: 'రోడ్లు, నీటి సరఫరా, విద్యుత్ సమస్యలను సులభంగా నివేదించండి; ఏఐ తక్షణ పరిష్కార చర్యను అందిస్తుంది.',
+    formGrievanceTitle: 'సమస్య శీర్షిక',
+    formGrievanceTitlePlaceholder: 'ఉదా. ప్రాథమిక పాఠశాల వద్ద రోడ్డు గుంతలు',
+    formDescription: 'పూర్తి వివరాలు',
+    formDescriptionPlaceholder: 'సమస్య ఎప్పుడు మొదలైంది, ఎంతమంది ఇబ్బంది పడుతున్నారో రాయండి...',
+    formCategory: 'సమస్య విభాగం',
+    formCategoryAutoAI: '✨ ఏఐ ఆటో-కేటగిరీ ఎంపిక',
+    formVillage: 'గ్రామం / పట్టణం',
+    formDistrict: 'జిల్లా',
+    formLocationDetails: 'ల్యాండ్‌మార్క్ / చిరునామా',
+    formLocationDetailsPlaceholder: 'ఉదా. ప్రభుత్వ బడి దగ్గర, ప్రధాన కూడలి',
+    formUploadPhoto: 'ఫోటో / కెమెరా అప్‌లోడ్',
+    formReporterName: 'మీ పూర్తి పేరు',
+    formContactPhone: 'మొబైల్ నంబర్',
+    formPrefLanguage: 'భాష ఎంపిక',
+    formSubmitButton: 'ఫిర్యాదును సమర్పించండి',
+    formAnalyzing: 'ఏఐ విశ్లేషణ జరుగుతోంది...',
+
+    // Statuses
+    statusSubmitted: 'సమర్పించబడింది',
+    statusAIAnalyzed: 'ఏఐ విశ్లేషించింది',
+    statusAssigned: 'విభాగానికి కేటాయించబడింది',
+    statusAccepted: 'అంగీకరించబడింది',
+    statusInProgress: 'పురోగతిలో ఉంది',
+    statusResolved: 'పరిష్కరించబడింది',
+    statusClosed: 'ముగిసింది',
+    statusReopened: 'తిరిగి తెరవబడింది',
+
+    // Priorities
+    priorityCritical: 'అత్యవసరం (Critical)',
+    priorityHigh: 'అధిక (High)',
+    priorityMedium: 'మధ్యస్థం (Medium)',
+    priorityLow: 'సాధారణం (Low)',
+
+    // Track
+    enterGrievanceId: 'ఫిర్యాదు ఐడీ నమోదు చేయండి (ఉదా. RR-2026-000124)',
+    trackNow: 'స్థితిని చూడండి',
+    expectedResolution: 'పరిష్కార అంచనా తేదీ',
+    slaDeadline: 'నిర్ణీత కాలపరిమితి',
+    assignedDept: 'బాధ్యతాయుత విభాగం',
+    timeline: 'కాలక్రమం',
+    officerRemarks: 'అధికారి పరిశీలన వ్యాఖ్యలు',
+    resolutionEvidence: 'పరిష్కార సాక్ష్య ఫోటో',
+    citizenFeedbackTitle: 'పౌరుల ధృవీకరణ & ఫీడ్‌బ్యాక్',
+    feedbackPrompt: 'మీ సమస్య క్షేత్రస్థాయిలో సంతృప్తికరంగా పరిష్కరించబడిందా?',
+    yesResolved: '👍 అవును, పరిష్కారమైంది',
+    noNotResolved: '👎 లేదు, సమస్య ఇంకా ఉంది',
+    ratingPrompt: 'విభాగం సేవా నాణ్యతకు రేటింగ్ ఇవ్వండి:',
+    reopenButton: 'ఫిర్యాదును తిరిగి తెరవండి',
+    submitFeedback: 'ఫీడ్‌బ్యాక్ సమర్పించండి',
+
+    // Roles
+    roleCitizen: 'పౌర పోర్టల్',
+    roleOfficer: 'శాఖ అధికారి',
+    roleAdmin: 'రాష్ట్ర పరిపాలన'
+  }
+};
+
+export function getTranslation(lang: LanguageCode, key: string): string {
+  return TRANSLATIONS[lang]?.[key] || TRANSLATIONS.en[key] || key;
+}
